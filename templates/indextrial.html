@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Light</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<body>
+
+
+<form action="/18/{% if pins[18].state == true %}off{% else %}on{% endif %}" method="POST">
+
+		{% if pins[18].state == true %}
+		<input type="image" name="led" src="/static/img/{{ pins[18].colour }}-on.png" value="{{ pins[18].colour }}">
+		{% else %}
+		<input type="image" name="led" src="/static/img/{{ pins[18].colour }}-off.png" value="{{ pins[18].colour }}">
+	</br>
+		{% endif %}
+</form>
+
+<form action="/23/{% if pins[23].state == true %}off{% else %}on{% endif %}" method="POST">
+
+		{% if pins[23].state == true %}
+		<input type="image" name="led" src="/static/img/{{ pins[23].colour }}-on.png" value="{{ pins[23].colour }}">
+		{% else %}
+		<input type="image" name="led" src="/static/img/{{ pins[23].colour }}-off.png" value="{{ pins[23].colour }}">
+	</br>
+		{% endif %}
+</form>
+
+<form action="/24/{% if pins[24].state == true %}off{% else %}on{% endif %}" method="POST">
+
+		{% if pins[24].state == true %}
+		<input type="image" name="led" src="/static/img/{{ pins[24].colour }}-on.png" value="{{ pins[24].colour }}">
+		{% else %}
+		<input type="image" name="led" src="/static/img/{{ pins[24].colour }}-off.png" value="{{ pins[24].colour }}">
+	</br>
+		{% endif %}
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
