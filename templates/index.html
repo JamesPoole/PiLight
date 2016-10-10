@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Smart Light</title>
+		<title>PiLight</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 <body>
-
 
 <form action="/18/{% if pins[18].state == true %}off{% else %}on{% endif %}" method="POST">
 
@@ -36,12 +35,7 @@
 	</br>
 		{% endif %}
 
-
 </form>
-
-
-
-
 
 </body>
 </html>
