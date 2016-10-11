@@ -30,7 +30,7 @@ def index():
 		'pins' : pins
 	}
 
-	return render_template('indextrial.html', **templateData)
+	return render_template('index.html', **templateData)
 
 @app.route('/<changepin>/<action>', methods=['POST'])
 def reroute(changepin, action):
